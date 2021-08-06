@@ -1,0 +1,22 @@
+<div class="col-md-4 mx-auto">
+    <div class="card text-center">
+        <h3 class="card-header">Update Product</h3>
+        <div class="card-body">
+            <form action="/products/update/{{x._id}}?_method=PUT" method="POST" autocomplete="off">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="mb-3">
+                    <input type="text" name="name" value="{{x.name}}" class="form-control" placeholder="Name" autofocus required>
+                </div>
+                <div class="mb-3">
+                    <input type="number" name="price" value="{{x.price}}" class="form-control" placeholder="Price" required>
+                </div>
+                <div class="mb-3">
+                    <input type="number" name="stock" value="{{x.stock}}" class="form-control" placeholder="Stock" required>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

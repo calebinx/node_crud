@@ -1,0 +1,14 @@
+#
+
+npm init --y | inicializar archivo de informacion
+npm i express | simplificar codigo para el servidor
+npm i morgan | ver las perticiones
+npm i mongoose | modulo de conexion mongodb
+npm i dotenv | usar variables de entorno
+
+npm i express-handlebars | integrar un motor de plantillas
+npm i method-override | enviar peticiones put y delete desde los formularios
+npm i bcryptjs | encriptar contraseña
+npm i connect-flash | enviar mensaje desde multiples vistas
+
+npm i express-session | crear secciones dentro del servidor

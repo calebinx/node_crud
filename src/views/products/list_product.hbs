@@ -1,0 +1,21 @@
+<div class="row">
+    <!-- Recorrer todos los registror | Por cada recorrido crear una tarjeta -->
+    {{#each x}}
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                        {{name}}
+                        <form action="/products/delete/{{_id}}?_method=DELETE" method="POST">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn-close" aria-label="Close"></button>
+                        </form>
+                    </h4>
+                    <b>Price: </b><p>{{price}}</p>
+                    <b>Stock: </b><p>{{stock}}</p>
+                    <a href="/products/update/{{_id}}"class="btn btn-dark d-grid gap-2">Update</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
